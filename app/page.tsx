@@ -15,7 +15,7 @@ export default function Home() {
           
         </div>
         <div className="grow pl-36 ">
-        {appFeatures.map((item: dataItem)=> <li>{item.description}</li>)}
+        {appFeatures.map((item: dataItem, i)=> <li key={i}>{item.description}</li>)}
         </div>
       </div>
     
