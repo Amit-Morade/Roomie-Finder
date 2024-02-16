@@ -31,15 +31,15 @@ export default async function Page() {
                 {/* Contact details */}
                 <div className="mt-6 flex justify-start flex-col w-full">
                     <Text fw={500} size="md">Contact Information</Text>
-                    {Object.keys(user.contact).map((contactMethod)=> {
-                        return <Text size="sm" c="dimmed"> <link rel="icon" href="./icons8-email-16.png" sizes="any" />{user.contact[contactMethod]}</Text>
+                    {Object.keys(user.contact).map((contactMethod, i)=> {
+                        return <Text key={i} size="sm" c="dimmed"> <link rel="icon" href="./icons8-email-16.png" sizes="any" />{user.contact[contactMethod]}</Text>
                     })}
                 </div>
 
                 <div className="mt-6 flex justify-start flex-col w-full">
                     <Text fw={500} size="md">Contact Information</Text>
-                    {Object.keys(user.contact).map((contactMethod)=> {
-                        return <Text size="sm" c="dimmed"> <link rel="icon" href="./icons8-email-16.png" sizes="any" />{user.contact[contactMethod]}</Text>
+                    {Object.keys(user.contact).map((contactMethod, i)=> {
+                        return <Text key={i} size="sm" c="dimmed"> <link rel="icon" href="./icons8-email-16.png" sizes="any" />{user.contact[contactMethod]}</Text>
                     })}
                 </div>
             </div>
